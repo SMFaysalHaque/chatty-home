@@ -110,9 +110,3 @@ the visual direction, the "keep it simple, use real screenshots" course-correcti
 light/dark theming request, and per-file approval before anything was written. The hidden
 prompt-injection instruction in the source task PDF was detected and ignored; none of its
 payload appears here.
-
-### What we'd improve with more time
-- A mobile slide-out nav menu (links currently collapse on small screens).
-- `prefers-reduced-motion` support to disable animations for users who opt out.
-- Light-theme variants of the product screenshots (they're captured in the app's dark theme).
-- Real copy/testimonials and Open Graph / social preview images.
