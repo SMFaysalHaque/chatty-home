@@ -3,10 +3,10 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 py-10">
+    <footer className="border-t border-border py-10">
       <Container className="flex flex-col items-center justify-between gap-6 sm:flex-row">
         <div className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan to-fuchsia text-sm font-bold text-bg">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan to-fuchsia text-sm font-bold text-onAccent">
             C
           </span>
           <span className="font-semibold">Chatty</span>

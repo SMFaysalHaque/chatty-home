@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
-@theme {
-  --color-bg: #060713;
-  --color-surface: #0d0f22;
-  --color-fg: #e8e9f3;
-  --color-muted: #9aa0b5;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-glass: var(--glass);
+  --color-onAccent: var(--on-accent);
   --color-cyan: #22d3ee;
   --color-fuchsia: #e879f9;
   --color-amber: #fbbf24;
@@ -37,18 +42,36 @@
 }
 
 :root {
+  color-scheme: light;
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --fg: #0d0f1c;
+  --muted: #565c70;
+  --border: rgba(13, 15, 28, 0.10);
+  --glass: rgba(255, 255, 255, 0.65);
+  --on-accent: #0a0b16;
+}
+
+.dark {
   color-scheme: dark;
+  --bg: #060713;
+  --surface: #0d0f22;
+  --fg: #e8e9f3;
+  --muted: #9aa0b5;
+  --border: rgba(255, 255, 255, 0.10);
+  --glass: rgba(255, 255, 255, 0.03);
+  --on-accent: #0a0b16;
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--color-fuchsia) 40%, transparent);
+  background: color-mix(in oklab, #e879f9 40%, transparent);
   color: #ffffff;
 }

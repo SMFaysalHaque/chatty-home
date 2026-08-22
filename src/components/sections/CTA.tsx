@@ -9,7 +9,7 @@ export function CTA() {
     <section className="relative py-24 md:py-32">
       <Container>
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center md:p-16">
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-glass p-10 text-center md:p-16">
             <AuroraBackground />
             <h2 className="text-3xl font-bold sm:text-4xl">
               Ready to start <GradientText>chatting</GradientText>?
@@ -21,7 +21,7 @@ export function CTA() {
               href={CHAT_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-gradient-to-r from-cyan to-fuchsia px-8 py-3 text-sm font-semibold text-bg shadow-lg shadow-fuchsia/25 transition hover:opacity-90"
+              className="mt-8 inline-block rounded-full bg-gradient-to-r from-cyan to-fuchsia px-8 py-3 text-sm font-semibold text-onAccent shadow-lg shadow-fuchsia/25 transition hover:opacity-90"
             >
               Open Chatty →
             </a>

@@ -25,7 +25,7 @@ export function Hero() {
         <motion.div variants={container} initial="hidden" animate="show" className="mx-auto max-w-3xl text-center">
           <motion.span
             variants={item}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-muted"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-glass px-3 py-1 text-xs font-medium text-muted"
           >
             <span className="h-2 w-2 rounded-full bg-cyan animate-pulse-dot" />
             Real-time messaging, live now
@@ -45,15 +45,9 @@ export function Hero() {
               href={CHAT_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full rounded-full bg-gradient-to-r from-cyan to-fuchsia px-6 py-3 text-sm font-semibold text-bg shadow-lg shadow-fuchsia/25 transition hover:opacity-90 sm:w-auto"
+              className="w-auto rounded-full bg-gradient-to-r from-cyan to-fuchsia px-6 py-3 text-sm font-semibold text-onAccent shadow-lg shadow-fuchsia/25 transition hover:opacity-90"
             >
               Start chatting free
-            </a>
-            <a
-              href="#demo"
-              className="w-full rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-fg transition hover:bg-white/10 sm:w-auto"
-            >
-              See it live
             </a>
           </motion.div>
         </motion.div>

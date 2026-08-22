@@ -20,7 +20,7 @@ export function Showcase() {
 
         <div className="mt-16 grid items-center gap-10 md:grid-cols-2">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-wide text-cyan">Real-time</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-cyan-600 dark:text-cyan">Real-time</p>
             <h3 className="mt-2 text-2xl font-bold">Messages the moment they’re sent</h3>
             <p className="mt-3 text-muted">
               Powered by websockets, every message lands instantly — no refresh, no waiting.
@@ -36,7 +36,7 @@ export function Showcase() {
 
         <div className="mt-24 grid items-center gap-10 md:grid-cols-2">
           <Reveal className="md:order-2">
-            <p className="text-sm font-semibold uppercase tracking-wide text-fuchsia">Groups</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-fuchsia-600 dark:text-fuchsia">Groups</p>
             <h3 className="mt-2 text-2xl font-bold">Full admin control for group chats</h3>
             <p className="mt-3 text-muted">
               Create groups, add or remove members, promote admins, rename, and leave — all
@@ -52,7 +52,7 @@ export function Showcase() {
 
         <div className="mt-24 grid items-center gap-10 md:grid-cols-2">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-wide text-amber">Responsive</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-amber-600 dark:text-amber">Responsive</p>
             <h3 className="mt-2 text-2xl font-bold">Beautiful on every screen</h3>
             <p className="mt-3 text-muted">
               From desktop to pocket, Chatty adapts. Dark mode, smart auto-scroll, and a
